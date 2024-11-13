@@ -1,0 +1,118 @@
+
+print("==========Quiz Time=======")
+print("Category: [General Knowledge!]")
+print("-----------------------")
+print("=====Instructions======")
+print("1. You only have 3 attempts on each question")
+print("2. If your attempts is already over you will automatically proceed to the next round")
+print("-----------------------")
+ques = ["q1", "q2","q3","q4","q5"]
+
+score = 0
+for x in ques:
+    if x == "q1":
+
+        att = 3
+        i=0
+        while i < 3:
+            q1 = input("What is the Capital of the Philippines [A] MANILA [B] BEIJING [C] BANGKOK: ")
+            ques = q1.capitalize()
+
+
+            if ques == 'A':
+                print("Good Job! Proceed to the next Round")
+                score += 1
+                break
+            else:
+                att -= 1
+                print(f"You only have: {att} attempt left! Try Again!")
+                i += 1
+                continue
+
+            i += -1
+        print("-----------------------")
+
+
+
+    elif x == "q2":
+
+        i = 0
+        att = 3
+        while i < 3:
+            q1 = input("Who is our National Hero [A] JOSE RIZAL [B] APOLINARIO MABINI [C] HENERAL LUNA: ")
+            ques = q1.capitalize()
+
+            if ques == 'A':
+                print("Good Job! Proceed to the next Round")
+                score += 1
+                break
+            else:
+                # att = 3
+                att -= 1
+                print(f"You only have: {att} attempt left! Try Again!")
+                i += 1
+                continue
+        print("-----------------------")
+    elif x == "q3":
+
+        i = 0
+        att = 3
+        while i < 3:
+            q1 = input("What is our National Flower [A] ROSE [B] WALING-WALING [C] SAMPAGUITA: ")
+            ques = q1.capitalize()
+
+            if ques == 'C':
+                print("Good Job! Proceed to the next Round")
+                score += 1
+                break
+            else:
+
+                att -= 1
+                print(f"You only have: {att} attempt left! Try Again!")
+                i += 1
+                continue
+        print("-----------------------")
+    elif x == "q4":
+
+        i = 0
+        att = 3
+        while i < 3:
+            q1 = input("What is our National Bird [A] MAYA [B] PHILIPPINE EAGLE [C] DOVE: ")
+            ques = q1.capitalize()
+
+            if ques == 'B':
+                print("Good Job! Proceed to the next Round")
+                score += 1
+                break
+            else:
+
+                att -= 1
+                print(f"You only have: {att} attempt left! Try Again!")
+                i += 1
+                continue
+        print("-----------------------")
+    elif x == "q5":
+
+        i = 0
+        att = 3
+        while i < 3:
+            q1 = input("What is our National Leaf [A] ANAHAW [B] CARABAO GRASS [C] LEMON GRASS: ")
+            ques = q1.capitalize()
+
+            if ques == 'A':
+                print("Good Job! Proceed to the next Round")
+                score += 1
+                break
+            else:
+
+                att -= 1
+                print(f"You only have: {att} attempt left! Try Again!")
+                i += 1
+                continue
+
+        print("-----------------------")
+
+
+print(f"Congratulations! Your Score: {score}")
+
+
