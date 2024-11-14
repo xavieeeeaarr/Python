@@ -1,0 +1,53 @@
+
+i=0
+while (i<1):
+    print("======= C A L C U L A T O R ========")
+    op = input("Please Choose an Operator [A] ADDITION [B] SUBTRACTION [C] MULTIPLICATION [D] DIVISION: ")
+    w = op.capitalize()
+
+    fir = float(input("Enter First Number: "))
+    sec = float(input("Enter Second Number: "))
+
+    if w == 'A':
+        print("---------------------------------------------")
+        sum = fir + sec
+        print(f"The Sum of the Both Number is {sum}")
+        print("---------------------------------------------")
+
+    elif w == 'B':
+        print("---------------------------------------------")
+        dif = fir - sec
+        print(f"The Difference of the Both Number is {dif}")
+        print("---------------------------------------------")
+
+    elif w == 'C':
+        print("---------------------------------------------")
+        pro = fir * sec
+        print(f"The Product of the Both Number is {pro}")
+        print("---------------------------------------------")
+
+    elif w == 'D':
+        print("---------------------------------------------")
+        if (sec == 0):
+            print("Cannot divide by zero")
+        else:
+            qo = fir / sec
+            print(f"The Qoutient of the Both Number is {qo}")
+            print("---------------------------------------------")
+    else:
+        print("Wrong Input! Please Try Again!")
+
+    cho = input("Do you want to solve another problem?  [A] YES  [B] NO:  ")
+    print("------------------------------------------------------------------")
+
+    capi = cho.capitalize()
+
+    if capi == 'A':
+        continue
+    elif capi == 'B':
+        print("T H A N K  Y O U !")
+        print("---------------------------------------------")
+        i = 5
+    else:
+        print("Wrong Input! Please Try Again!")
+        continue
